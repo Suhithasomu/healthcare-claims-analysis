@@ -1,0 +1,122 @@
+
+╔══════════════════════════════════════════════════════════════════════╗
+║           HEALTHCARE QUALITY & UTILIZATION REPORT                    ║
+║          Aligned with HEDIS & CMS Reporting Standards                ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+REPORTING PERIOD: 2008-2010
+DATA SOURCE: CMS DE-SynPUF Sample 2
+REPORT DATE: 2026-03-15
+
+══════════════════════════════════════════════════════════════════════
+SECTION 1: POPULATION OVERVIEW
+══════════════════════════════════════════════════════════════════════
+
+Total Members Analyzed:                     36,981
+Total Inpatient Claims:                     64,379
+Total Healthcare Expenditure:               $632,284,530.00
+
+Cost Per Member (Annual):                   $17,097.55
+Inpatient Admits per 1,000 Members:         580.3
+
+
+══════════════════════════════════════════════════════════════════════
+SECTION 2: QUALITY METRICS (HEDIS-ALIGNED)
+══════════════════════════════════════════════════════════════════════
+
+UTILIZATION METRICS:
+--------------------------------------------------------------------
+Readmission Indicator:
+  Members with 2+ Admissions:               14,473 (39.1%)
+  Benchmark Comparison:                     Industry avg ~14-16%
+  Status:                                   ⚠️ Above Benchmark
+
+Average Length of Stay:                     5.5 days
+  (Data available for subset of claims)
+
+
+CHRONIC DISEASE MANAGEMENT:
+--------------------------------------------------------------------
+Members with Chronic Conditions:            31,965 (86.4%)
+
+Condition-Specific Prevalence:
+  • Diabetes:                               18,291 (49.5%)
+  • Congestive Heart Failure (CHF):         16,885 (45.7%)
+  • COPD:                                   7,057 (19.1%)
+
+Multiple Chronic Conditions (3+):           19,396
+  Impact: 1.1x higher costs
+
+
+══════════════════════════════════════════════════════════════════════
+SECTION 3: RISK STRATIFICATION & COST DISTRIBUTION
+══════════════════════════════════════════════════════════════════════
+
+MEMBER RISK CATEGORIES:
+--------------------------------------------------------------------
+Risk Level         Members      % of Pop    Total Cost        % of Costs
+--------------------------------------------------------------------
+Low Risk           25,558        69.1%      $  208,651,090       33.0%
+Medium Risk         7,609        20.6%      $  195,455,710       30.9%
+High Risk           3,814        10.3%      $  228,177,730       36.1%
+--------------------------------------------------------------------
+Total              36,981      100.0%      $  632,284,530     100.0%
+
+🚨 KEY FINDING: Top 10% of members account for 36.1% of costs
+
+
+══════════════════════════════════════════════════════════════════════
+SECTION 4: TOP COST DRIVERS
+══════════════════════════════════════════════════════════════════════
+
+TOP 5 DIAGNOSIS CODES BY TOTAL COST:
+--------------------------------------------------------------------
+diagnosis_code  total_cost  claim_count
+         V5789  28000100.0         1727
+         41401  24892170.0         1574
+          0389  24520700.0         1615
+           486  17533430.0         2466
+         41071  14808100.0         1127
+
+Note: ICD-9 diagnosis codes represent specific medical conditions
+
+
+══════════════════════════════════════════════════════════════════════
+SECTION 5: RECOMMENDATIONS & ACTION ITEMS
+══════════════════════════════════════════════════════════════════════
+
+PRIORITY 1: HIGH-RISK MEMBER MANAGEMENT
+✓ Target 3,814 high-risk members for intensive case management
+✓ Estimated impact: 10-15% cost reduction = $28,522,216
+
+PRIORITY 2: CHRONIC DISEASE PROGRAMS
+✓ Deploy care coordination for 19,396 members with 3+ conditions
+✓ Focus areas: Diabetes management, CHF monitoring, COPD care
+
+PRIORITY 3: READMISSION PREVENTION
+✓ Implement post-discharge follow-up for members with 2+ admissions
+✓ Target population: 14,473 members
+✓ Goal: Reduce readmissions by 20% = $82,798,674 savings
+
+PRIORITY 4: PREDICTIVE ANALYTICS DEPLOYMENT
+✓ Use ML model (91.9% accuracy) to identify at-risk members proactively
+✓ Enable early intervention before costs escalate
+
+
+══════════════════════════════════════════════════════════════════════
+COMPLIANCE STATEMENT
+══════════════════════════════════════════════════════════════════════
+
+This report follows industry-standard healthcare quality metrics aligned with:
+- HEDIS (Healthcare Effectiveness Data and Information Set)
+- CMS Quality Reporting Requirements
+- Medicare Advantage Star Ratings Framework
+
+Data Quality: 3.2% of claims excluded due to missing/invalid data
+Analysis Method: Statistical analysis with 91.9% predictive accuracy
+
+══════════════════════════════════════════════════════════════════════
+
+Report Prepared By: Suhitha Reddy Somu, Data Analyst
+Tools: Python, SQL, Tableau, Statistical Analysis
+Contact: suhithasomu0108@gmail.com

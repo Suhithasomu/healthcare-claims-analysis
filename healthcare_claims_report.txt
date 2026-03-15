@@ -1,0 +1,145 @@
+
+╔══════════════════════════════════════════════════════════════════════╗
+║     HEALTHCARE CLAIMS ANALYTICS & MEMBER RISK SEGMENTATION           ║
+║                      PROJECT SUMMARY REPORT                          ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+DATASET OVERVIEW
+═══════════════════════════════════════════════════════════════════════
+Data Source: CMS DE-SynPUF (Synthetic Medicare Claims Data)
+Analysis Period: 2008-2010
+
+Original Dataset:
+  • Beneficiaries: 112,845
+  • Inpatient Claims: 66,494
+  • Outpatient Claims: 792,562
+  • Total Claims: 859,056
+
+After Data Cleaning:
+  • Removed 2,115 inpatient claims (3.2%)
+    - $0 payment claims
+    - Missing dates
+    - Missing diagnosis codes
+  • Final Inpatient Claims: 64,379
+  • Unique Members Analyzed: 36,981
+
+COST ANALYSIS
+═══════════════════════════════════════════════════════════════════════
+Total Healthcare Spending: $632,284,530.00
+
+Claim-Level Statistics:
+  • Average Inpatient Claim: $9,821.29
+  • Median Inpatient Claim: $7,000.00
+  • Range: $10.00 - $57,000.00
+
+Member-Level Statistics:
+  • Average Cost per Member: $17,097.55
+  • Median Cost per Member: $11,000.00
+  • Highest-Cost Member: $264,000.00
+
+Utilization Patterns:
+  • Average Claims per Member: 1.7
+  • Members with 1 claim: 22,508 (60.9%)
+  • Members with 4+ claims: 3,230 (8.7%)
+
+RISK SEGMENTATION
+═══════════════════════════════════════════════════════════════════════
+Three-Tier Risk Model:
+  • Low Risk: < $18,000
+  • Medium Risk: $18,000 - $39,000
+  • High Risk: > $39,000
+
+Segmentation Results:
+
+LOW RISK (25,558 members - 69.1%)
+  • Total Cost: $208,651,090.00
+  • % of Total Costs: 33.0%
+  • Avg per Member: $8,163.83
+
+MEDIUM RISK (7,609 members - 20.6%)
+  • Total Cost: $195,455,710.00
+  • % of Total Costs: 30.9%
+  • Avg per Member: $25,687.44
+
+HIGH RISK (3,814 members - 10.3%)
+  • Total Cost: $228,177,730.00
+  • % of Total Costs: 36.1%
+  • Avg per Member: $59,826.36
+
+🚨 KEY FINDING: Top 10% of members drive 36.1% of total costs
+
+DIAGNOSIS ANALYSIS
+═══════════════════════════════════════════════════════════════════════
+Top 5 Cost-Driving Diagnoses (ICD-9 Codes):
+diagnosis_code  total_cost  claim_count
+         V5789  28000100.0         1727
+         41401  24892170.0         1574
+          0389  24520700.0         1615
+           486  17533430.0         2466
+         41071  14808100.0         1127
+
+CHRONIC CONDITION IMPACT
+═══════════════════════════════════════════════════════════════════════
+  • Members with NO chronic conditions: $14,704.58 avg cost
+  • Members with chronic conditions: $17,473.06 avg cost
+  • Cost increase from chronic conditions: 18.8%
+
+Members by Chronic Condition Count:
+  • 0 conditions: 5,016 members
+  • 1-2 conditions: 12,569 members
+  • 3+ conditions: 19,396 members
+
+PREDICTIVE MODEL
+═══════════════════════════════════════════════════════════════════════
+Algorithm: Logistic Regression
+Target: Predict High-Risk Members
+
+Performance Metrics:
+  • Overall Accuracy: 91.9%
+  • High-Risk Members Identified: 260 out of 763 (34.1%)
+  • Precision (High-Risk): 72.4%
+
+Top 3 Predictive Features:
+  1. claim_count (Importance: 1.085)
+  2. SP_CHRNKIDN (Importance: 0.396)
+  3. SP_DEPRESSN (Importance: 0.174)
+
+BUSINESS RECOMMENDATIONS
+═══════════════════════════════════════════════════════════════════════
+
+1. TARGETED CASE MANAGEMENT
+   → Focus on 3,814 high-risk members (10%)
+   → Potential cost reduction: 10-20% of $228,177,730.00 = $34,226,659.50
+
+2. CHRONIC DISEASE MANAGEMENT
+   → Members with 3+ chronic conditions have 1.3x higher costs
+   → Implement care coordination programs
+
+3. READMISSION PREVENTION
+   → Members with 4+ claims (3,230 members) are frequent utilizers
+   → Deploy post-discharge follow-up protocols
+
+4. PREDICTIVE MODEL DEPLOYMENT
+   → Use model to identify at-risk members proactively
+   → Intervene BEFORE they become high-cost
+
+PROJECTED BUSINESS IMPACT
+═══════════════════════════════════════════════════════════════════════
+Conservative Estimates:
+  • 10% reduction in high-risk member costs: $22,817,773.00
+  • 15% reduction in readmissions: $62,099,005.50
+  • Total potential annual savings: $84,916,778.50
+
+FILES GENERATED
+═══════════════════════════════════════════════════════════════════════
+✓ claim_cost_distribution.png
+✓ risk_segmentation.png  
+✓ top_diagnoses.png
+✓ predictive_model.png
+✓ healthcare_claims_report.txt
+
+PROJECT METADATA
+═══════════════════════════════════════════════════════════════════════
+Analyst: Suhitha Reddy Somu
+Tools: Python, Pandas, Scikit-learn, Matplotlib, Seaborn
+Date: 2026-03-14
