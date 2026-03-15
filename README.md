@@ -3,7 +3,7 @@
 End-to-end Medicare claims analysis identifying high-cost members and cost drivers using CMS data, predictive modeling, and interactive Tableau dashboard.
 
 ## 🌐 Live Dashboard
-**[View Interactive Tableau Dashboard](https://public.tableau.com/app/profile/suhitha.reddy.somu/viz/HealthcareClaimsAnalyticsDashboard/Dashboard1)**
+**[View Interactive Tableau Dashboard](https://public.tableau.com/app/profile/suhitha.reddy.somu/viz/HealthcareClaimsAnalyticsDashboard/Story1?publish=yes)**
 
 Click to explore the live dashboard with interactive filters and animations!
 
